@@ -1,0 +1,211 @@
+dma_id,rank,dma_name,tv_homes,percent_usa
+500,80,Portland-Auburn,389530,0.341
+501,1,New York,7384340,6.468
+502,157,Binghamton,133420,0.117
+503,120,Macon,241170,0.211
+504,4,Philadelphia,2949310,2.583
+505,11,Detroit,1845920,1.617
+506,7,Boston (Manchester),2366690,2.073
+507,92,Savannah,334750,0.293
+508,23,Pittsburgh,1165740,1.021
+509,109,Ft. Wayne,265390,0.232
+510,18,Cleveland-Akron (Canton),1485140,1.301
+511,8,"Washington, DC (Hagrstwn)",2359160,2.066
+512,27,Baltimore,1085070,0.950
+513,67,Flint-Saginaw-Bay City,446010,0.391
+514,52,Buffalo,632150,0.554
+515,35,Cincinnati,897890,0.786
+516,146,Erie,155190,0.136
+517,25,Charlotte,1136420,0.995
+518,46,Greensboro-H.Point-W.Salem,695100,0.609
+519,98,"Charleston, SC",316080,0.277
+520,113,Augusta-Aiken,257730,0.226
+521,53,Providence-New Bedford,606400,0.531
+522,127,"Columbus, GA (Opelika, AL)",216920,0.190
+523,97,Burlington-Plattsburgh,316910,0.278
+524,9,Atlanta,2326840,2.038
+525,150,"Albany, GA",150110,0.131
+526,172,Utica,102890,0.090
+527,26,Indianapolis,1089700,0.954
+528,16,Miami-Ft. Lauderdale,1621130,1.420
+529,48,Louisville,670880,0.588
+530,106,Tallahassee-Thomasville,273120,0.239
+531,96,"Tri-Cities, TN-VA",319060,0.279
+532,58,Albany-Schenectady-Troy,540050,0.473
+533,30,Hartford & New Haven,996550,0.873
+534,19,Orlando-Daytona Bch-Melbrn,1453170,1.273
+535,32,"Columbus, OH",930460,0.815
+536,110,Youngstown,260000,0.228
+537,155,Bangor,138040,0.121
+538,78,"Rochester, NY",395680,0.347
+539,14,Tampa-St. Pete (Sarasota),1806560,1.582
+540,119,Traverse City-Cadillac,241800,0.212
+541,64,Lexington,485630,0.425
+542,63,Dayton,498270,0.436
+543,114,Springfield-Holyoke,252950,0.222
+544,44,Norfolk-Portsmth-Newpt Nws,709730,0.622
+545,100,Greenville-N.Bern-Washngtn,303280,0.266
+546,77,"Columbia, SC",398510,0.349
+547,76,Toledo,409550,0.359
+548,38,West Palm Beach-Ft. Pierce,794310,0.696
+549,177,Watertown,92590,0.081
+550,132,Wilmington,188420,0.165
+551,115,Lansing,251140,0.220
+552,205,Presque Isle,29250,0.026
+553,180,Marquette,84640,0.074
+554,158,Wheeling-Steubenville,130110,0.114
+555,84,Syracuse,377550,0.331
+556,57,Richmond-Petersburg,553390,0.485
+557,61,Knoxville,520890,0.456
+558,199,Lima,51240,0.045
+559,156,Bluefield-Beckley-Oak Hill,134410,0.118
+560,24,Raleigh-Durham (Fayetvlle),1150350,1.008
+561,50,Jacksonville,659170,0.577
+563,39,Grand Rapids-Kalmzoo-B.Crk,720150,0.631
+564,65,Charleston-Huntington,455490,0.399
+565,174,Elmira (Corning),95530,0.084
+566,43,Harrisburg-Lncstr-Leb-York,716990,0.628
+567,37,Greenvll-Spart-Ashevll-And,846030,0.741
+569,178,Harrisonburg,90260,0.079
+570,103,Myrtle Beach-Florence,285550,0.250
+571,62,Ft. Myers-Naples,502050,0.440
+573,68,Roanoke-Lynchburg,445470,0.390
+574,102,Johnstown-Altoona-St Colge,288100,0.252
+575,87,Chattanooga,353710,0.310
+576,144,Salisbury,157830,0.138
+577,54,Wilkes Barre-Scranton-Hztn,581020,0.509
+581,154,Terre Haute,139600,0.122
+582,189,"Lafayette, IN",66240,0.058
+583,208,Alpena,16910,0.015
+584,183,Charlottesville,74340,0.065
+588,95,South Bend-Elkhart,319860,0.280
+592,163,Gainesville,123430,0.108
+596,203,Zanesville,32940,0.029
+597,193,Parkersburg,62620,0.055
+598,170,Clarksburg-Weston,106480,0.093
+600,129,Corpus Christi,203730,0.178
+602,3,Chicago,3484800,3.052
+603,149,Joplin-Pittsburg,151200,0.132
+604,138,Columbia-Jefferson City,173640,0.152
+605,136,Topeka,176160,0.154
+606,169,Dothan,107110,0.094
+609,21,St. Louis,1243490,1.089
+610,135,Rockford,179240,0.157
+611,153,Rochestr-Mason City-Austin,143330,0.126
+612,82,Shreveport,384410,0.337
+613,15,Minneapolis-St. Paul,1728050,1.513
+616,31,Kansas City,931320,0.816
+617,34,Milwaukee,902190,0.790
+618,10,Houston,2215650,1.941
+619,74,"Springfield, MO",414570,0.363
+622,51,New Orleans,641550,0.562
+623,5,Dallas-Ft. Worth,2588020,2.267
+624,147,Sioux City,154830,0.136
+625,88,Waco-Temple-Bryan,349540,0.306
+626,204,Victoria,31560,0.028
+627,143,Wichita Falls & Lawton,158500,0.139
+628,137,Monroe-El Dorado,175960,0.154
+630,42,Birmingham (Ann and Tusc),717530,0.628
+631,200,Ottumwa-Kirksville,46730,0.041
+632,81,Paducah-Cape Girard-Harsbg,388340,0.340
+633,152,Odessa-Midland,147730,0.129
+634,130,Amarillo,197110,0.173
+635,45,Austin,705280,0.618
+636,86,Harlingen-Wslco-Brnsvl-McA,364160,0.319
+637,90,Cedar Rapids-Wtrlo-IWC&Dub,342610,0.300
+638,201,St. Joseph,46180,0.040
+639,176,"Jackson, TN",93090,0.081
+640,49,Memphis,662830,0.581
+641,36,San Antonio,881050,0.772
+642,124,"Lafayette, LA",229320,0.201
+643,175,Lake Charles,94610,0.083
+644,179,"Alexandria, LA",89280,0.078
+647,188,Greenwood-Greenville,66410,0.058
+648,83,Champaign&Sprngfld-Decatur,378720,0.332
+649,104,Evansville,284040,0.249
+650,41,Oklahoma City,718770,0.630
+651,142,Lubbock,159840,0.140
+652,75,Omaha,414060,0.363
+656,159,Panama City,129390,0.113
+657,161,Sherman-Ada,126930,0.111
+658,69,Green Bay-Appleton,441800,0.387
+659,29,Nashville,1014910,0.889
+661,196,San Angelo,55820,0.049
+662,164,Abilene-Sweetwater,114080,0.100
+669,85,Madison,376670,0.330
+670,101,Ft. Smith-Fay-Sprngdl-Rgrs,297590,0.261
+671,59,Tulsa,526960,0.462
+673,133,Columbus-Tupelo-W Pnt-Hstn,184990,0.162
+675,116,Peoria-Bloomington,244050,0.214
+676,139,Duluth-Superior,169610,0.149
+678,66,Wichita-Hutchinson Plus,450300,0.394
+679,72,Des Moines-Ames,427860,0.375
+682,99,Davenport-R.Island-Moline,303800,0.266
+686,60,Mobile-Pensacola (Ft Walt),525990,0.461
+687,151,Minot-Bsmrck-Dcknsn(Wlstn),150000,0.131
+691,79,Huntsville-Decatur (Flor),390590,0.342
+692,141,Beaumont-Port Arthur,167110,0.146
+693,56,Little Rock-Pine Bluff,561760,0.492
+698,118,Montgomery-Selma,241930,0.212
+702,128,La Crosse-Eau Claire,211670,0.185
+705,134,Wausau-Rhinelander,179450,0.157
+709,107,Tyler-Longview(Lfkn&Ncgd),268150,0.235
+710,167,Hattiesburg-Laurel,109950,0.096
+711,186,Meridian,68860,0.060
+716,94,Baton Rouge,329620,0.289
+717,171,Quincy-Hannibal-Keokuk,103520,0.091
+718,93,"Jackson, MS",331500,0.290
+722,105,Lincoln & Hastings-Krny,276790,0.242
+724,117,Fargo-Valley City,243890,0.214
+725,112,Sioux Falls(Mitchell),258460,0.226
+734,181,Jonesboro,80740,0.071
+736,182,Bowling Green,78780,0.069
+737,198,Mankato,52530,0.046
+740,209,North Platte,14720,0.013
+743,145,Anchorage,156280,0.137
+744,71,Honolulu,437790,0.383
+745,202,Fairbanks,37920,0.033
+746,160,Biloxi-Gulfport,128300,0.112
+747,207,Juneau,26320,0.023
+749,184,Laredo,72590,0.064
+751,17,Denver,1566460,1.372
+752,89,Colorado Springs-Pueblo,343990,0.301
+753,13,Phoenix (Prescott),1812040,1.587
+754,187,Butte-Bozeman,67180,0.059
+755,190,Great Falls,65930,0.058
+756,168,Billings,109730,0.096
+757,111,Boise,259090,0.227
+758,162,Idaho Fals-Pocatllo(Jcksn),125710,0.110
+759,195,Cheyenne-Scottsbluff,56350,0.049
+760,191,Twin Falls,64100,0.056
+762,166,Missoula,113010,0.099
+764,173,Rapid City,98020,0.086
+765,91,El Paso (Las Cruces),339130,0.297
+766,206,Helena,28260,0.025
+767,197,Casper-Riverton,55270,0.048
+770,33,Salt Lake City,917370,0.803
+771,165,Yuma-El Centro,113230,0.099
+773,185,Grand Junction-Montrose,70580,0.062
+789,70,Tucson (Sierra Vista),438440,0.384
+790,47,Albuquerque-Santa Fe,691450,0.606
+798,210,Glendive,4050,0.004
+800,126,Bakersfield,221740,0.194
+801,121,Eugene,235570,0.206
+802,194,Eureka,59610,0.052
+803,2,Los Angeles,5613460,4.917
+804,148,Palm Springs,154560,0.135
+807,6,San Francisco-Oak-San Jose,2502030,2.191
+810,122,Yakima-Pasco-Rchlnd-Knnwck,231950,0.203
+811,108,Reno,265600,0.233
+813,140,Medford-Klamath Falls,167820,0.147
+819,12,Seattle-Tacoma,1818900,1.593
+820,22,"Portland, OR",1182180,1.035
+821,192,"Bend, OR",62950,0.055
+825,28,San Diego,1075120,0.942
+828,125,Monterey-Salinas,224240,0.196
+839,40,Las Vegas,718990,0.630
+855,122,SantaBarbra-SanMar-SanLuOb,231950,0.203
+862,20,Sacramnto-Stkton-Modesto,1387710,1.215
+866,55,Fresno-Visalia,576820,0.505
+868,131,Chico-Redding,191500,0.168
+881,73,Spokane,420640,0.368
