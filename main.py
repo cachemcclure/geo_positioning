@@ -193,9 +193,9 @@ if not exists('dma_geodata.shp'):
     for xx in region_map[1:]:
         temp = gpd.GeoDataFrame([[xx.dma_name,xx.dma_code]],geometry=gpd.GeoSeries(xx.polygon))
         gdf = gdf.append(temp,ignore_index=True)
-    #gdf.to_file('dma_geodata.shp')
+    #gdf.to_file('dma_geodata.shp',driver='GPKG')
 else:
-    gdf = gpd.read_file('dma_geodata.shp')
+    gdf = gpd.read_file('dma_geodata.shp',driver='GPKG')
 
 #gdf.plot(cmap='Blues')
 #plt.show()
