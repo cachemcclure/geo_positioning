@@ -11,6 +11,8 @@ from shapely.geometry.polygon import Polygon
 from shapely import MultiPolygon
 import geopandas as gpd
 import matplotlib.pyplot as plt
+import pyproj
+import plotly.express as px
 
 
 class dma:
@@ -131,17 +133,20 @@ def find_dma(lat,
 
 nielsen = jload(open('nielsen-definitions.json','r'))
 
-ndf = pd.DataFrame(columns=['dma_id','rank','dma_name','tv_homes','percent_usa'])
+if not exists('dma_definitions.csv'):
+    ndf = pd.DataFrame(columns=['dma_id','rank','dma_name','tv_homes','percent_usa'])
 
-for xx in nielsen:
-    temp = {'dma_id':xx,
-            'rank':nielsen[xx]['Rank'],
-            'dma_name':nielsen[xx]['Designated Market Area (DMA)'],
-            'tv_homes':nielsen[xx]['TV Homes'],
-            'percent_usa':nielsen[xx]['% of US']}
-    ndf = ndf.append(temp,ignore_index=True)
+    for xx in nielsen:
+        temp = {'dma_id':xx,
+                'rank':nielsen[xx]['Rank'],
+                'dma_name':nielsen[xx]['Designated Market Area (DMA)'],
+                'tv_homes':nielsen[xx]['TV Homes'],
+                'percent_usa':nielsen[xx]['% of US']}
+        ndf = ndf.append(temp,ignore_index=True)
 
-ndf.to_csv('dma_definitions.csv',index=False,header=True)
+    ndf.to_csv('dma_definitions.csv',index=False,header=True)
+else:
+    ndf = pd.read_csv('dma_definitions.csv')
 
 coords = jload(open('full-nielsent-mkt-map.json','r'))
 
@@ -165,25 +170,51 @@ and uu.id is not null;'''
 ##except Exception as err:
 ##    print(str(err)[:250])
 
-user_data = pd.read_csv('mb_user_data.csv')
-temp_nm = []
-temp_id = []
-for index, row in user_data.iterrows():
-    temp = find_dma(row['latitude'],row['longitude'],region_map)
-    temp_nm += [temp[0]]
-    temp_id += [temp[1]]
-    if len(temp_nm)%70000 == 0:
-        print(len(temp_nm))
+if not exists('dma_appended_data.csv'):
+    user_data = pd.read_csv('mb_user_data.csv')
+    temp_nm = []
+    temp_id = []
+    for index, row in user_data.iterrows():
+        temp = find_dma(row['latitude'],row['longitude'],region_map)
+        temp_nm += [temp[0]]
+        temp_id += [temp[1]]
+        if len(temp_nm)%70000 == 0:
+            print(len(temp_nm))
 
-user_data['dma_name'] = temp_nm
-user_data['dma_id'] = temp_id
+    user_data['dma_name'] = temp_nm
+    user_data['dma_id'] = temp_id
 
-user_data.to_csv('dma_appended_data.csv',index=False,header=True)
+    user_data.to_csv('dma_appended_data.csv',index=False,header=True)
+else:
+    user_data = pd.read_csv('dma_appended_data.csv')
 
-gdf = gpd.GeoDataFrame([region_map[0].dma_name],geometry=gpd.GeoSeries(region_map[0].polygon))
-for xx in region_map[1:]:
-    temp = gpd.GeoDataFrame([xx.dma_name],geometry=gpd.GeoSeries(xx.polygon))
-    gdf = gdf.append(temp,ignore_index=True)
+if not exists('dma_geodata.shp'):
+    gdf = gpd.GeoDataFrame([[region_map[0].dma_name,region_map[0].dma_code]],geometry=gpd.GeoSeries(region_map[0].polygon))
+    for xx in region_map[1:]:
+        temp = gpd.GeoDataFrame([[xx.dma_name,xx.dma_code]],geometry=gpd.GeoSeries(xx.polygon))
+        gdf = gdf.append(temp,ignore_index=True)
+    #gdf.to_file('dma_geodata.shp')
+else:
+    gdf = gpd.read_file('dma_geodata.shp')
 
-gdf.plot(cmap='Blues')
-plt.show()
+#gdf.plot(cmap='Blues')
+#plt.show()
+#print(gdf.columns)
+gdf['id'] = gdf[1].astype(int)
+gdf = gdf.merge(ndf.rename(columns={'dma_id':'id'}),on='id',how='left')
+
+#gdf.to_crs(pyproj.CRS.from_epsg(4326),inplace=True)
+fig = px.choropleth(gdf,
+                     geojson=gdf.geometry,
+                     locations=gdf.index,
+                     hover_data=[0,1],
+                     color='percent_usa',
+                     title="DMA Regions",
+                     labels={"0":"Region Name",
+                             "1":"DMA Region",
+                             "percent_usa":"Percent of Population"})
+fig.update_geos(fitbounds="locations",
+                visible=False)
+
+fig.write_html('dma_regions.html',include_plotlyjs='cdn')
+fig.show()
